@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry Potter World</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/characters">Characters</a></li>
+                <li><a href="/creatures">Magical Creatures</a></li>
+                <li><a href="/potions">Potions</a></li>
+                <li><a href="/movies">Movies</a></li>
+                <li><a href="/weather">Weather</a></li>
+                <li><a href="/auth/logout">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Welcome to the Harry Potter World!</h1>
+        <p>Discover magical creatures, potions, and more.</p>
+
+        <!-- Карусель -->
+        <div id="harryPotterCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://assets-prd.ignimgs.com/2023/02/24/harry-potter-and-the-prisoner-of-azkaban-1677198758683.jpg" class="d-block w-100" alt="Harry Potter and the Prisoner of Azkaban">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://ew.com/thmb/3FgeZu_d--7Db3T1YdFNAC5OPDA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/hogwarts_0_0_0-ec7999f47ab24042be68a569f477f2d5.jpg" class="d-block w-100" alt="Hogwarts">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://townsquare.media/site/442/files/2016/11/harry-potter-half-blood-prince-dumbledore.jpg?w=780&q=75" class="d-block w-100" alt="Harry Potter and the Half-Blood Prince">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#harryPotterCarousel" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#harryPotterCarousel" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </a>
+        </div>
+        <!-- Конец карусели -->
+
+        <!-- Информация -->
+        <section>
+            <h2>About the Harry Potter Universe</h2>
+            <p>
+                The Harry Potter universe is a fictional world created by J.K. Rowling. It centers around the adventures of the young wizard Harry Potter and his friends at Hogwarts School of Witchcraft and Wizardry. The magical universe includes an elaborate system of magic, magical creatures, and richly developed characters, all intertwined with themes of friendship, bravery, and the fight against evil. The story spans seven books, which were later adapted into eight blockbuster movies.
+            </p>
+            <p>
+                The universe also includes spin-off works such as "Fantastic Beasts," a series exploring the magical world before Harry's time. It features notable locations like Diagon Alley, Hogsmeade, and the Ministry of Magic, and iconic items such as the Elder Wand and the Marauder's Map.
+            </p>
+            <p>
+                To explore more, visit <a href="https://harrypotter.fandom.com/wiki/Harry_Potter_universe" target="_blank">Harry Potter Wiki</a>.
+            </p>
+        </section>
+    </main>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <footer style="text-align: center; margin-top: 20px; padding: 10px; background-color: #f4f4f4;">
+        <p>Assel Khaidarova, BDA-2301</p>
+    </footer>
+    
+</body>
+</html>

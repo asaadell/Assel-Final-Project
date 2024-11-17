@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/characters">Characters</a></li>
+                <li><a href="/creatures">Magical Creatures</a></li>
+                <li><a href="/potions">Potions</a></li>
+                <li><a href="/movies">Movies</a></li>
+                <li><a href="/weather">Weather</a></li>
+                <li><a href="/auth/logout">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Weather in Hogwarts (Scotland)</h1>
+    <p>Temperature: <%= weather.current.temp_c %>°C</p>
+    <p>Condition: <%= weather.current.condition.text %></p>
+    <img src="<%= weather.current.condition.icon %>" alt="Weather Icon">
+    <footer style="text-align: center; margin-top: 20px; padding: 10px; background-color: #f4f4f4;">
+        <p>Assel Khaidarova, BDA-2301</p>
+    </footer>
+    
+</body>
+</html>

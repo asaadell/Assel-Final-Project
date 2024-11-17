@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/characters">Characters</a></li>
+                <li><a href="/creatures">Magical Creatures</a></li>
+                <li><a href="/potions">Potions</a></li>
+                <li><a href="/movies">Movies</a></li>
+                <li><a href="/weather">Weather</a></li>
+                <li><a href="/auth/logout">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Manage <%= type %></h1>
+
+    <!-- Форма для создания нового элемента -->
+    <form action="/<%= type %>/create" method="POST">
+        <input type="text" name="name" placeholder="Name" required>
+        <textarea name="description" placeholder="Description" required></textarea>
+        <button type="submit">Create</button>
+    </form>
+
+    <!-- Список существующих элементов -->
+    <ul>
+        <% items.forEach(item => { %>
+            <li>
+                <h2><%= item.name %></h2>
+                <p><%= item.description %></p>
+                <form action="/<%= type %>/update/<%= item._id %>" method="POST">
+                    <input type="text" name="name" value="<%= item.name %>" required>
+                    <textarea name="description" required><%= item.description %></textarea>
+                    <button type="submit">Update</button>
+                </form>
+                <form action="/<%= type %>/delete/<%= item._id %>" method="POST">
+                    <button type="submit">Delete</button>
+                </form>
+            </li>
+        <% }); %>
+    </ul>
+</body>
+</html>
