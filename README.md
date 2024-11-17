@@ -1,4 +1,5 @@
-﻿**Harry Potter World**
+**Assel Khaidarova BDA-2301 WEB**
+ **Harry Potter World**
 
 A web application dedicated to exploring the magical world of Harry Potter, featuring characters, creatures, and potions.
 
